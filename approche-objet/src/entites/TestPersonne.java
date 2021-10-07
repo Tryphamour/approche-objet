@@ -14,6 +14,6 @@ public class TestPersonne {
 		prsn1.setPrenom("Julien");
 
 		Personne prsn2 = new Personne("John", "Doe", adr2);
-		prsn2.setAdresse(new AdressePostale (54, "Rue Clamart", 51000, "Châlons en Champagne"));
+		prsn2.setAdresse(adr2);
 	}
 }
