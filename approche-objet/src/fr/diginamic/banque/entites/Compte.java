@@ -20,6 +20,10 @@ public class Compte {
 		this.soldeCompte = soldeCompte;
 	}
 
+	public String toString() {
+		return "Numéro de compte : " + numeroCompte + ", Solde du compte : " + soldeCompte + ".";
+	}
+
 	public int getNumeroCompte() {
 		return numeroCompte;
 	}
