@@ -15,6 +15,7 @@ public class Cercle {
 	public double surface() {
 		return Math.PI * (rayon * rayon);
 	}
+	
 	public String toString() {
 		return "Le rayon est de : " + rayon + " cm." + " Le périmètre est de : " + perimetre() + " cm." + " La surface est de : " + surface() + " cm.²";
 	}
