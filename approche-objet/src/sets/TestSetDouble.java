@@ -23,8 +23,5 @@ public class TestSetDouble {
 		
 		set.remove(Collections.min(set));
 		System.out.println("Suppresion du plus petit élément du tableau : " + set);
-		
-		
-
 	}
 }
