@@ -1,11 +1,11 @@
 package sets;
 
 public class Pays {
-	
+
 	private String nom;
 	private int nbHabitants;
 	private double pibParHabitant;
-	
+
 	/**
 	 * @param nom
 	 * @param nbHabitants
@@ -58,5 +58,16 @@ public class Pays {
 	 */
 	public void setPibParHabitant(double pibParHabitant) {
 		this.pibParHabitant = pibParHabitant;
+	}
+
+	/**
+	 * @return the pibTotal
+	 */
+	public double pibTotal() {
+		return nbHabitants * pibParHabitant;
+	}
+
+	public String toString(){
+		  return " | Pays : " + nom + "\n | Nombre d'habitants : " + nbHabitants + "\n | PIB par habitant : " + pibParHabitant + "\n";
 	}
 }

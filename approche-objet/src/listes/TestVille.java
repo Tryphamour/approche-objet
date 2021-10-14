@@ -27,6 +27,7 @@ public class TestVille {
 		System.out.println("La ville la plus grande est : " + villeMax);
 		
 		Ville villeMin = villes.get(0);
+		
 		for (Ville ville : villes) {
 			if (ville.getNbHabitants() < villeMin.getNbHabitants()) {
 				villeMin = ville;
