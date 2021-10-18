@@ -1,5 +1,7 @@
 package fr.diginamic.recensement;
 
+import java.util.Objects;
+
 public class Ville {
 
 	private int codeVille;

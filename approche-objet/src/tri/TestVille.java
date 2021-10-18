@@ -17,7 +17,7 @@ public class TestVille {
 		villes.add(new Ville("Pau", 77_200));
 		villes.add(new Ville("Marseille", 850_700));
 		villes.add(new Ville("Tarbes", 40_600));
-		
+
 		Collections.sort(villes, new ComparatorNom());
 		System.out.println(villes);
 		System.out.println("---------------------------------");
