@@ -11,7 +11,7 @@ public class CercleFactory {
 		this.nouveauCercle = nouveauCercle;
 	}
 	
-	public static Cercle CréerCercle(double nouveauCercle) {
+	public static Cercle CreerCercle(double nouveauCercle) {
 		return new Cercle(nouveauCercle);
 	}
 
