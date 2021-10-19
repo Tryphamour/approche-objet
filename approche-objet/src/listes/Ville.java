@@ -4,14 +4,22 @@ public class Ville {
 
 	private String nom;
 	private int nbHabitants;
+	private Continent continent;
 
-	public Ville(String nom, int nbHabitants) {
+	/**
+	 * @param nom
+	 * @param nbHabitants
+	 * @param continent
+	 */
+	public Ville(String nom, int nbHabitants, Continent continent) {
 		this.nom = nom;
 		this.nbHabitants = nbHabitants;
+		this.continent = continent;
 	}
-	
+
+	@Override
 	public String toString() {
-		return nom + " " + nbHabitants;
+		return nom + " " + nbHabitants + " " + continent.getLibelle();
 	}
 
 	/**
@@ -40,5 +48,19 @@ public class Ville {
 	 */
 	public void setNbHabitants(int nbHabitants) {
 		this.nbHabitants = nbHabitants;
+	}
+	
+	/**
+	 * @return the continent
+	 */
+	public Continent getContinent() {
+		return continent;
+	}
+
+	/**
+	 * @param continent the continent to set
+	 */
+	public void setContinent(Continent continent) {
+		this.continent = continent;
 	}
 }
