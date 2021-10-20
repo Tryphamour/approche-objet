@@ -12,7 +12,6 @@ public class App {
 	public static void main(String[] args) {
 		LOG.info("Bonjour Slf4J !");
 		LOG.info("Implementation Logback");
-		
 		AppService appservice = new AppService();
 		appservice.executer("TEST");
 	}

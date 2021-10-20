@@ -17,11 +17,17 @@
 			</pattern>
 		</encoder>
 	</appender>
-	<logger name="dev.console" level="INFO">
+	<logger name="dev.service" level="INFO">
+		<appender-ref ref="FILE" />
+	</logger>
+	<logger name="dev.service" level="DEBUG">
 		<appender-ref ref="FILE" />
 	</logger>
 	<!-- regle de logs par defaut. Ici : niveau INFO vers la sortie standard -->
 	<root level="INFO">
+		<appender-ref ref="STDOUT" />
+	</root>
+	<root level="DEBUG">
 		<appender-ref ref="STDOUT" />
 	</root>
 </configuration>
