@@ -5,12 +5,18 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
 
+/**
+ * Classe qui trouve la rÃ©gion d'une ville
+ * 
+ * @author Felix
+ *
+ */
 public class VilleReg extends MenuService {
 
 	@Override
 	public void traiter(Recensement recensement, Scanner scanner) {
 
-		System.out.println("Pour quel région ?");
+		System.out.println("Pour quel rï¿½gion ?");
 
 		String reponse = scanner.nextLine();
 

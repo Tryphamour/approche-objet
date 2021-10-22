@@ -8,8 +8,19 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Classe d'application
+ * 
+ * @author Felix
+ *
+ */
 public class Application {
 
+	/**
+	 * @param args
+	 * @throws IOException
+	 * @throws InterruptedException
+	 */
 	public static void main(String[] args) throws IOException, InterruptedException {
 
 		Path path = Paths.get("C:/Users/sonag/Documents/Diginamic/tp/java/objet/recensement.csv");
@@ -25,13 +36,13 @@ public class Application {
 				Recensement recensement = new Recensement(lines);
 				boolean leave = false;
 				while (!leave) {
-					System.out.println("Que veux tu faire ?\n" + "| 1. Population d’une ville donnée\n"
-							+ "| 2. Population d’un département donné\n" + "| 3. Population d’une région donnée\n"
-							+ "| 4. Afficher les 10 régions les plus peuplées\n"
-							+ "| 5. Afficher les 10 départements les plus peuplés\n"
-							+ "| 6. Afficher les 10 villes les plus peuplées d’un département\n"
-							+ "| 7. Afficher les 10 villes les plus peuplées d’une région\n"
-							+ "| 8. Afficher les 10 villes les plus peuplées de France\n" + "| 9. Sortir");
+					System.out.println("Que veux tu faire ?\n" + "| 1. Population dï¿½une ville donnï¿½e\n"
+							+ "| 2. Population dï¿½un dï¿½partement donnï¿½\n" + "| 3. Population dï¿½une rï¿½gion donnï¿½e\n"
+							+ "| 4. Afficher les 10 rï¿½gions les plus peuplï¿½es\n"
+							+ "| 5. Afficher les 10 dï¿½partements les plus peuplï¿½s\n"
+							+ "| 6. Afficher les 10 villes les plus peuplï¿½es dï¿½un dï¿½partement\n"
+							+ "| 7. Afficher les 10 villes les plus peuplï¿½es dï¿½une rï¿½gion\n"
+							+ "| 8. Afficher les 10 villes les plus peuplï¿½es de France\n" + "| 9. Sortir");
 					int choix = sc.nextInt();
 					switch (choix) {
 					case 1:
@@ -77,12 +88,12 @@ public class Application {
 
 					Thread.sleep(7000);
 				}
-				System.out.println("Merci et à bientôt!");
+				System.out.println("Merci et ï¿½ bientï¿½t!");
 			} else {
-				System.err.println("Problème de lecture");
+				System.err.println("Problï¿½me de lecture");
 			}
 		} else {
-			System.err.println("Problème de fichier");
+			System.err.println("Problï¿½me de fichier");
 		}
 
 	}

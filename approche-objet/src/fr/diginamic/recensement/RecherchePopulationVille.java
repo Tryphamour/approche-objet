@@ -2,6 +2,12 @@ package fr.diginamic.recensement;
 
 import java.util.Scanner;
 
+/**
+ * Classe qui recherche la population d'une ville
+ * 
+ * @author Felix
+ *
+ */
 public class RecherchePopulationVille extends MenuService {
 
 	public RecherchePopulationVille() {

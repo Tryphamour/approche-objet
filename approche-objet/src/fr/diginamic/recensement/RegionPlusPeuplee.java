@@ -5,6 +5,12 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
 
+/**
+ * Classe qui trouve la région la plus peuplée
+ * 
+ * @author Felix
+ *
+ */
 public class RegionPlusPeuplee extends MenuService {
 
 	public RegionPlusPeuplee() {

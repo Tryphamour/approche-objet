@@ -2,6 +2,12 @@ package fr.diginamic.recensement;
 
 import java.util.Scanner;
 
+/**
+ * Classe qui recherche la population d'un dÃ©partement
+ * 
+ * @author Felix
+ *
+ */
 public class RecherchePopulationDep extends MenuService {
 
 	public RecherchePopulationDep() {
@@ -13,7 +19,7 @@ public class RecherchePopulationDep extends MenuService {
 		
 		int popTotal = 0;
 		
-		System.out.println("Quelle département (n°) ?");
+		System.out.println("Quelle dï¿½partement (nï¿½) ?");
 		
 		String reponse = scanner.nextLine();
 		
@@ -22,7 +28,7 @@ public class RecherchePopulationDep extends MenuService {
 				popTotal += ville.getPop();
 			}
 		}
-		System.out.println("Le département a une population de " + popTotal);
+		System.out.println("Le dï¿½partement a une population de " + popTotal);
 	}
 
 }

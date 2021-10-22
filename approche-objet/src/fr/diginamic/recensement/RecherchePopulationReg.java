@@ -2,6 +2,12 @@ package fr.diginamic.recensement;
 
 import java.util.Scanner;
 
+/**
+ * Classe qui recherche la population d'une rÃ©gion
+ * 
+ * @author Felix
+ *
+ */
 public class RecherchePopulationReg extends MenuService {
 
 	public RecherchePopulationReg() {
@@ -12,7 +18,7 @@ public class RecherchePopulationReg extends MenuService {
 
 		int popTotal = 0;
 		
-		System.out.println("Quelle région ?");
+		System.out.println("Quelle rï¿½gion ?");
 		
 		String reponse = scanner.nextLine();
 		
@@ -23,6 +29,6 @@ public class RecherchePopulationReg extends MenuService {
 				popTotal += ville.getPop();
 			}
 		}
-		System.out.println("La région a une population de " + popTotal);
+		System.out.println("La rï¿½gion a une population de " + popTotal);
 	}
 }

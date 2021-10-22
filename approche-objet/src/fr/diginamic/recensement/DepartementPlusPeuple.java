@@ -5,6 +5,12 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
 
+/**
+ * Classe qui trouve le département le plus peuplé
+ * 
+ * @author Felix
+ *
+ */
 public class DepartementPlusPeuple extends MenuService {
 
 	public DepartementPlusPeuple() {
@@ -15,21 +21,21 @@ public class DepartementPlusPeuple extends MenuService {
 	public void traiter(Recensement recensement, Scanner scanner) {
 
 		HashMap<String, Integer> map = new HashMap<String, Integer>();
-		
+
 		for (Ville ville : recensement.getListeVille()) {
 			map.put(ville.getDep().getCodeDepart(), 0);
 		}
-		
+
 		for (Ville ville : recensement.getListeVille()) {
 			map.put(ville.getDep().getCodeDepart(), map.get(ville.getDep().getCodeDepart()) + ville.getPop());
 		}
 
 		ComparatorPerso comp = new ComparatorPerso(map);
-		
+
 		TreeMap<String, Integer> sorted_map = new TreeMap<String, Integer>(comp);
-		
+
 		sorted_map.putAll(map);
-		
+
 		int i = 0;
 		for (Map.Entry<String, Integer> entry : sorted_map.entrySet()) {
 			if (i == 10)

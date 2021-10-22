@@ -5,17 +5,23 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
 
+/**
+ * Classe qui trouve le dÃ©partement d'une ville
+ * 
+ * @author Felix
+ *
+ */
 public class VilleDep extends MenuService {
 
 	@Override
 	public void traiter(Recensement recensement, Scanner scanner) {
-		
-		System.out.println("Pour quel département ? (n°)");
-		
+
+		System.out.println("Pour quel dï¿½partement ? (nï¿½)");
+
 		String reponse = scanner.nextLine();
-		
+
 		HashMap<String, Integer> map = new HashMap<String, Integer>();
-		
+
 		for (Ville ville : recensement.getListeVille()) {
 			if (ville.getDep().getCodeDepart().equals(reponse))
 				map.put(ville.getNomVille(), 0);
@@ -26,10 +32,10 @@ public class VilleDep extends MenuService {
 		}
 
 		ComparatorPerso comp = new ComparatorPerso(map);
-		
+
 		TreeMap<String, Integer> sorted_map = new TreeMap<String, Integer>(comp);
 		sorted_map.putAll(map);
-		
+
 		int i = 0;
 		for (Map.Entry<String, Integer> entry : sorted_map.entrySet()) {
 			if (i == 10)
